@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from "@/app/ui/dashboard/users/users.module.css";
 import Search from '@/app/ui/dashboard/search/search';
 import Link from 'next/link'
-import Pagination from '@/app/ui/dashboard/pagination/page';
+import Pagination from '@/app/ui/dashboard/pagination/pagination';
 const UsersPage = () => {
   return (
     <div className={styles.container}>
@@ -47,18 +47,16 @@ const UsersPage = () => {
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
-                </Link>
-                <Link href="/">
+                </Link>  
                   <button className={`${styles.button} ${styles.delete}`}>
                     Delete
-                  </button>
-                </Link>
+                  </button>     
               </div>
             </td>
           </tr>
         </tbody>
       </table>
-      <Pagination />
+      <Pagination/>
     </div>
   );
 };
