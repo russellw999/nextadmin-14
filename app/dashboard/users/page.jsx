@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import styles from "@/app/ui/dashboard/users/users.module.css";
+import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import Search from '@/app/ui/dashboard/search/search';
+import styles from "@/app/ui/dashboard/users/users.module.css";
+import Image from 'next/image'
 import Link from 'next/link'
-import Pagination from '@/app/ui/dashboard/pagination/pagination';
 const UsersPage = () => {
   return (
     <div className={styles.container}>
@@ -38,8 +38,8 @@ const UsersPage = () => {
               </div>
             </td>
             <td>john@gmail.com</td>
-            <td>13.01.2022</td>
-            <td>Admin</td>
+            <td>13.01.2023</td>
+            <td>Client</td>
             <td>Active</td>
             <td>
               <div className={styles.buttons}>
@@ -54,6 +54,36 @@ const UsersPage = () => {
               </div>
             </td>
           </tr>
+          <tr>
+            <td>
+              <div className={styles.user}>
+                <Image
+                  src="/noavatar.png"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className={styles.userImage}
+                />
+                Hello
+              </div>
+            </td>
+            <td>hello@gmail.com</td>
+            <td>23.01.2023</td>
+            <td>Client</td>
+            <td>Passive</td>
+            <td>
+              <div className={styles.buttons}>
+                <Link href="/">
+                  <button className={`${styles.button} ${styles.view}`}>
+                    View
+                  </button>
+                </Link>  
+                  <button className={`${styles.button} ${styles.delete}`}>
+                    Delete
+                  </button>     
+              </div>
+            </td>
+          </tr>         
         </tbody>
       </table>
       <Pagination/>

@@ -29,7 +29,7 @@ const ProductsPage = () => {
             <td>
               <div className={styles.product}>
                 <Image
-                  src="/noproduct.png"
+                  src="/noproduct.jpg"
                   alt=""
                   width={40}
                   height={40}
@@ -56,6 +56,37 @@ const ProductsPage = () => {
               </div>
             </td>
           </tr>
+          <tr>
+            <td>
+              <div className={styles.product}>
+                <Image
+                  src="/noproduct.jpg"
+                  alt=""
+                  width={40}
+                  height={40}
+                  className={styles.productImage}
+                />
+                Iphone
+              </div>
+            </td>
+            <td>Dell Monitor</td>
+            <td>$650.99</td>
+            <td>24.09.2023</td>
+            <td>99</td>
+            <td>Active</td>
+            <td>
+              <div className={styles.buttons}>
+                <Link href="/">
+                  <button className={`${styles.button} ${styles.view}`}>
+                    View
+                  </button>
+                </Link>  
+                  <button className={`${styles.button} ${styles.delete}`}>
+                    Delete
+                  </button>     
+              </div>
+            </td>
+          </tr>          
         </tbody>
       </table>
       <Pagination/>
