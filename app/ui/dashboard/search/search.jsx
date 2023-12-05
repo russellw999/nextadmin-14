@@ -12,6 +12,8 @@ const Search = ({placeholder}) => {
 
     const params = new URLSearchParams(searchParams);
 
+    params.set('page', 1);
+
    // console.log(`e_target_value : ${e.target.value}`); 
     if (e.target.value) {
       e.target.value.length > 2 && params.set("q", e.target.value);
