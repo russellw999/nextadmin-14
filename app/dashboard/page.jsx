@@ -12,7 +12,7 @@ const Dashboard = () => {
          <div className={styles.cards}>
            <Card />
            <Card />
-            <Card />
+           <Card />
          </div>
          <Transactions />
          <Chart />
